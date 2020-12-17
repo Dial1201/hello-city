@@ -1,17 +1,15 @@
 {% extends "base.html.twig" %}
 
+{% block title 'Hello City !' %}
+
+
 {% block body %}
+	<img src="{{ asset('/img/Sport-Investment.jpg') }}" alt="Logo de Sport investment sas" width="200px" height="200px" class="my-12 rounded-full h-24 w-24 shadow-md">
 
-	<h1>Hello from Ferney Voltaire</h1>
+	<h1 class="mt-5  sm:text-4xl font-semibold text-indigo-600">Hello from Geneve</h1>
 
-	<p>It's currently
+	<p class="text-lg text-gray-800">It's currently
 		{{ 'now'|date('h:i A') }}.</p>
 
-	<footer>
-		<p>&copy; Copyright
-			{{ 'now'|date('Y') }}
-			<a href="#">About us</a>
-		</p>
-	</footer>
 
 {% endblock %}
